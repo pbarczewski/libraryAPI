@@ -50,7 +50,7 @@ Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Date: Mon, 16 Mar 2020 14:36:33 GMT
 
-{"isbn":"9781592432172","title":"A Hypervista of the Java Landscape","subtitle":null,"publisher":"InfoStrategist.com","thumbnailUrl":"http://books.google.com/books/content?id=7tkN1CYzn2cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api","language":"en","previewLink":"http://books.google.pl/books?id=7tkN1CYzn2cC&pg=PP1&dq=java&hl=&cd=1&source=gbs_api","description":null,"publishedDate":0,"pageCount":0,"averageRating":0.0,"authors":null,"categories":null}
+{"isbn":"9781592432172","title":"A Hypervista of the Java Landscape","subtitle":null,"publisher":"InfoStrategist.com","thumbnailUrl":"http://books.google.com/books/content?id=7tkN1CYzn2cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api","language":"en","previewLink":"http://books.google.pl/books?id=7tkN1CYzn2cC&pg=PP1&dq=java&hl=&cd=1&source=gbs_api" ,"description":null,"publishedDate":0,"pageCount":0,"averageRating":0.0,"authors":null,"categories":null}
 
 ## Get a non existing book
 #### Request
