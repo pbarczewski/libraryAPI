@@ -16,6 +16,7 @@ Project is created with:
 - Spring framework 5.1.6
 - Jackson 2.9.10.3
 - hamcrest 1.3
+- RestAssured
 
 ## Setup
 ### Run the app
