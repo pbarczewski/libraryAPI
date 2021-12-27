@@ -17,7 +17,6 @@ class RestApiApplicationTests {
 	
 	@PostConstruct
 	public static void setupConfiguration() {
-		System.out.print("dupa");
 		RestAssured.baseURI = "http://localhost:8080/api";
 		RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
 		
