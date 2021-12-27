@@ -19,7 +19,6 @@ class RestApiApplicationTests {
 	public static void setupConfiguration() {
 		RestAssured.baseURI = "http://localhost:8080/api";
 		RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
-		
 	}
 
 	@Test
@@ -68,9 +67,4 @@ class RestApiApplicationTests {
 		.queryParam("category", "Szklanki")
 		.when().get("books/").then().statusCode(404);
 	}
-	
-
-	
-	
-	
 }
