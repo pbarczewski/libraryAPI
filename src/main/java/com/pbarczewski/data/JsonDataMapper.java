@@ -4,29 +4,31 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.pbarczewski.entity.Item;
 
-public class DataReader {
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.pbarczewski.books.infrastructure.model.ItemEntity;
+
+public class JsonDataMapper {
 
 	private final static String dataPath = "data/books.json";
-	public static final DataReader INSTANCE = new DataReader();
+	public static final JsonDataMapper INSTANCE = new JsonDataMapper();
 
-	private DataReader() {
+	private JsonDataMapper() {
 		if (INSTANCE != null) {
 			throw new IllegalArgumentException("Class is already existed");
 		}
 	}
 
-	public List<Item> readData() {
-		List<Item> items = new ArrayList<>();
+	public List<ItemEntity> readData() {
+		List<ItemEntity> itemEntities = new ArrayList<>();
 		try {
-			items = Arrays.asList(new ObjectMapper().treeToValue(new ObjectMapper()
+			itemEntities = Arrays.asList(new ObjectMapper().treeToValue(new ObjectMapper()
 					.readTree(new File(this.getClass().getClassLoader().getResource(dataPath).getFile()))
-					.get("items"), Item[].class));
+					.get("items"), ItemEntity[].class));
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
-		return items;
+		return itemEntities;
 	}
 }
