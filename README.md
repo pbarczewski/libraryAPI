@@ -10,15 +10,26 @@
 ## General Info
 Simple RestApi for browsing the "https://www.googleapis.com/books/v1/volumes?q=java&maxResults=40" resource.
 The project contains two controllers and 3 endpoints. 
-
+The controller returns two models, books and authors: 
+Books: 
+isbn - String, in case ISBN_13 is missing, id is inserted;
+title - String;
+subtitle - String;
+publisher - String;
+thumbnailUrl - String;
+language - String;
+previewLink - String;
+description - String;
+publishedDate - Local Date converted to Long value;
+pageCount - Long;
+averageRating - BigDecimal;
+authors List of Strings;
+categories - List of Strings;
 
 ## Technologies
 Project is created with:
-- Java 1.8
-- Spring framework 5.1.6
-- Jackson 2.9.10.3
-- hamcrest 1.3
-- RestAssured
+- Java
+- Spring framework
 
 ## Setup
 ### Run the app
