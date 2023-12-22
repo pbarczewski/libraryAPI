@@ -8,7 +8,9 @@
 * [Status](#status)
 
 ## General Info
-This is a simple RestAPI project. It allows to search by books and authors from "https://www.googleapis.com/books/v1/volumes?q=java&maxResults=40" resource.
+Simple RestApi for browsing the "https://www.googleapis.com/books/v1/volumes?q=java&maxResults=40" resource.
+The project contains two controllers and 3 endpoints. 
+
 
 ## Technologies
 Project is created with:
