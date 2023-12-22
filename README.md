@@ -11,7 +11,7 @@
 Simple RestApi for browsing the "https://www.googleapis.com/books/v1/volumes?q=java&maxResults=40" resource.
 The project contains two controllers and 3 endpoints. 
 The controller returns two models, books and authors: 
-Books: 
+Books:  
 isbn - String, in case ISBN_13 is missing, id is inserted;  
 title - String;  
 subtitle - String;  
